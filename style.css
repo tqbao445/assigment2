@@ -1,0 +1,65 @@
+/* Skip link styling */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+nav a:hover {
+  background-color: #555;
+  padding: 5px 10px;
+}
+
+/* Box model styling for all images */
+img {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Grid styling for gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Flex container example (nav uses flex already) */
+.flex-example {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* nth-child styling */
+.gallery img:nth-child(odd) {
+  border-radius: 50px;
+}
+.gallery img:nth-child(even) {
+  border-radius: 10px;
+}
